@@ -1,0 +1,11 @@
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'cache/**/*'
+    - 'db/**/*'
+    - 'spec/**/*'
+Metrics/LineLength:
+  Max: 100
+  IgnoredPatterns: ['(\A|\s)#']
+Style/Documentation:
+  Enabled: false
