@@ -8,7 +8,6 @@ RSpec.describe RegisterController, type: :controller do
       post :create, params: user_params
       expect(response).to be_successful
       body = JSON.parse(response.body)
-      puts body
       expect(body.keys).to eq ['auth_token', 'first_name', 'last_name', 'email']
     end
 
