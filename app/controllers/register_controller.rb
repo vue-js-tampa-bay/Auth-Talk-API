@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class RegisterController
+class RegisterController < ApplicationController
   def create
     user = User.new(user_params)
     if user.save
