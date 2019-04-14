@@ -10,7 +10,7 @@ class LoginController < ApplicationController
                      last_name: user.last_name,
                      email: user.email }
     else
-      render json: { error: 'Cannot Log In' }, status: :unauthorized
+      render json: { errors: ['Cannot log it', 'Unauthorized'] }, status: :unauthorized
     end
   end
 end
